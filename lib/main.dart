@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'dart:math' as math;
+import 'websocket.dart';
 
 void main() => runApp(MyApp());
 
@@ -12,7 +13,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: MyHomePage(title: 'Flutter Demo Home Page'),
+      home: MyHomePage(),
     );
   }
 }
@@ -264,21 +265,21 @@ class _MyHomePageState extends State<MyHomePage> with TickerProviderStateMixin {
                                 right: MediaQuery.of(context).size.width / 13.7,
                                 bottom:
                                     MediaQuery.of(context).size.width / 137),
-                            child: Text(
-                              'Just A               ',
-                              style: TextStyle(
-                                  fontSize: MediaQuery.of(context).size.width /
-                                      45.6666,
-                                  color: Colors.white,
-                                  fontWeight: FontWeight.bold),
-                            ),
+//                            child: Text(
+//                              'Just A               ',
+//                              style: TextStyle(
+//                                  fontSize: MediaQuery.of(context).size.width /
+//                                      45.6666,
+//                                  color: Colors.white,
+//                                  fontWeight: FontWeight.bold),
+//                            ),
                           ),
                           Text(
-                            'Demo Flutter Web Page',
+                            'New Text',
                             style: TextStyle(
                               fontFamily: "Inconsolata",
                               fontSize:
-                                  MediaQuery.of(context).size.width / 45.6666,
+                                  MediaQuery.of(context).size.width / 35.6666,
                               color: Colors.white,
                             ),
                           ),
