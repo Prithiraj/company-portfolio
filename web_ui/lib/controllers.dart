@@ -18,6 +18,5 @@ AnimationController stackedBoxController;
 Animation redBall;
 AnimationController redBallController;
 
-//Tween<double> imageSlide;
 Animation imageSlide;
 AnimationController imageSlideController;

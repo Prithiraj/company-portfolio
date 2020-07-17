@@ -106,7 +106,6 @@ class _MyHomePageState extends State<MyHomePage> with TickerProviderStateMixin {
     final Animation stackedCurve =
         CurvedAnimation(parent: stackedBoxController, curve: Curves.easeInOut);
     stackedBox = Tween<double>(begin: 205, end: 450).animate(stackedCurve);
-    //  imageSlide = Tween<double>(begin: 75, end: 00);
 
     stackedBoxController.forward();
 
@@ -159,7 +158,7 @@ class _MyHomePageState extends State<MyHomePage> with TickerProviderStateMixin {
       body: Stack(
         children: <Widget>[
           Column(
-            children: <Widget>[getRow(context), getBody(context)],
+            children: <Widget>[getNav(context), getBody(context)],
           ),
           getBlueBar(context),
           getYellowBall(yellowBall, context),

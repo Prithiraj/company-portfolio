@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-getRow(BuildContext context) {
+getNav(BuildContext context) {
   return Row(
     children: <Widget>[
       Padding(
